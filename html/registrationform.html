@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Web Form </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        input[type="radio"] {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        input[type="checkbox"] {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        .customcontainer {
+            background-color: rgb(255, 255, 255);
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container customcontainer ">
+        <h1>Registration Form</h1>
+        <hr>
+        <!--Form-->
+        <form id="frmRegistration">
+            <!--Full name-->
+            <div class="form-group">
+                <label for="fullName"><b>Full Name </b></label>
+                <input type="text" id="txtFullName" name="txtFullName" class="form-control"><br>
+                <span id="fullNameError" class=" error"></span>
+            </div>
+            <!--Email-->
+            <div class="form-group">
+                <label for="email"><b>Email address </b></label>
+                <input type="email" id="email" name="email" class="form-control"><br>
+                <span id="emailError" class="error"></span>
+            </div>
+            <!--Phone-->
+            <div class="form-group">
+                <label for="phone"><b>Phone(enter only 10 digit number) </b></label>
+                <input type="text" id="phone" name="phone" class="form-control"><br>
+                <span id="phoneError" class="error"></span>
+            </div>
+
+            <!--Password-->
+            <div class="form-group">
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" name="password" class="form-control"><br>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <!--Password-->
+            <div class="form-group">
+                <label for="confirmpassword"><b>Confirm Password</b></label>
+                <input type="password" id="confirmpassword" name="confirmpassword" class="form-control"><br>
+                <span id="confirmpasswordError" class="error "></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary ">Register</button><br><br>
+
+
+        </form>
+    </div>
+    <script src="/js/registrationform.js"></script>
+</body>
+
+</html>
