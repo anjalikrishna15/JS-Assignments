@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(251, 251, 251);
+}
+.buttonContainer {
+    margin: 10px auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.headerContainer {
+    margin: 10px auto;
+    padding: 20px;
+    display: inline-flex;
+    
+}
+
+.imgContainer {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(199, 196, 196);
+}
+
+.textContainer {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.summerContainer {
+    vertical-align:bottom;
+    max-width: 600px;
+     
+}
+
+
+.formContainer {
+    padding: 10px;
+    margin: auto;
+    max-width: 600px;
+    
+    
+}
+
+.customContainer {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+    border-color: dimgrey;
+}
+
+.headerContent {
+    color: darkgray;
+    font-size: 15px;
+    
+}
+
+.border {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
