@@ -1,6 +1,5 @@
 import { Astronaut } from "./astronaut.js";
 import { Cargo } from "./cargo.js";
-import { Payload } from "./payload.js";
 
 class Rocket {
     astronauts: Astronaut[]=[];
