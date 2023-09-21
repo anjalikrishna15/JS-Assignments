@@ -1,4 +1,4 @@
-interface Payload{
+interface IPayload{
     massKg:number;
 }
-export {Payload}
+export {IPayload}
