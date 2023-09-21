@@ -1,6 +1,6 @@
-import { Payload } from "./payload.js";
+import { IPayload } from "./payload.js";
 
-class Astronaut implements Payload{
+class Astronaut implements IPayload{
     massKg: number;
     name:string
 
