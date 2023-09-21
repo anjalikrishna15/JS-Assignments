@@ -1,6 +1,6 @@
-import { Payload } from "./payload.js";
+import { IPayload } from "./payload.js";
 
-class Cargo implements Payload{
+class Cargo implements IPayload{
     massKg: number;
     material:string;
     constructor( massKg :number,material:string){
