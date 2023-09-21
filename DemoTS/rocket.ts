@@ -10,6 +10,7 @@ class Rocket {
         this.name = name;
         this.totalCapacityKg = totalCapacityKg;
     }
+    //sunMass funtion
     public sumMass(Payload): number {
         let totalMass = 0;
         // Payload.forEach((element)=> {
@@ -20,17 +21,23 @@ class Rocket {
         });
         return totalMass;
     }
+
+    //calculating current mass
     public currentMassKg(): number {
         let astrMass = this.sumMass(this.astronauts);
         let cargoMass = this.sumMass(this.cargoItems);
         return astrMass + cargoMass;
     }
+
+    //checking if item van be added
     public canAdd(weight: number): boolean {
         if (this.currentMassKg() + weight <= this.totalCapacityKg)
             return true;
         else
             return false;
     }
+
+    //function to add cargo 
     public addCargo(cargo:Cargo): boolean {
         
         if(this.canAdd(cargo.massKg)===true){
@@ -43,6 +50,8 @@ class Rocket {
             return false
         }
     }
+
+   //function to add astronaut 
     public addAstronaut(astronaut:Astronaut): boolean {
         
         if(this.canAdd(astronaut.massKg)){
